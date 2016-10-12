@@ -64,7 +64,15 @@
 - (NSString *)xx_urlDecodedStr {
     NSString *decodedString  = (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)self, CFSTR(""), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
     return decodedString;
-
 }
 
+- (NSInteger)byteLength {
+    return  strlen([self UTF8String]);
+}
+
+- (BOOL)matchPhone {
+    NSString *matchStr = @"^\\d{11}$";
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", matchStr];
+    return [predicate evaluateWithObject:self];
+}
 @end

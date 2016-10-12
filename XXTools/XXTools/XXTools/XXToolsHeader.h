@@ -10,6 +10,7 @@
 #ifndef XXToolsHeader_h
 #define XXToolsHeader_h
 
+#import "XXToolsMacro.h"
 #import "NSDate+XX.h"
 #import "NSDictionary+XX.h"
 #import "NSMutableArray+XX.h"
@@ -21,7 +22,6 @@
 #import "UITableView+XX.h"
 #import "UIView+XX.h"
 #import "UILabel+XX.h"
-
 #import "XXTools.h"
 
 

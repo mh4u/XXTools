@@ -12,7 +12,7 @@
 
 + (NSString *)xx_sysTimeStampString {
     NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
-    return [NSString stringWithFormat:@"%@", @((long long)timestamp)];
+    return [NSString stringWithFormat:@"%@", @(timestamp)];
 }
 
 @end

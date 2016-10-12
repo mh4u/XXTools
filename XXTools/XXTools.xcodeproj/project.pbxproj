@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B7A5D601DAE19B900B3A771 /* UIColor+XX.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A5D5F1DAE19B900B3A771 /* UIColor+XX.m */; };
 		6BDCB7C31D9A40EB00FBEECD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCB7C21D9A40EB00FBEECD /* main.m */; };
 		6BDCB7C61D9A40EB00FBEECD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCB7C51D9A40EB00FBEECD /* AppDelegate.m */; };
 		6BDCB7C91D9A40EB00FBEECD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCB7C81D9A40EB00FBEECD /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B7A5D5E1DAE19B900B3A771 /* UIColor+XX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XX.h"; sourceTree = "<group>"; };
+		6B7A5D5F1DAE19B900B3A771 /* UIColor+XX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XX.m"; sourceTree = "<group>"; };
 		6BDCB7BE1D9A40EB00FBEECD /* XXTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDCB7C21D9A40EB00FBEECD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BDCB7C41D9A40EB00FBEECD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				6BDCB7FD1D9A41FE00FBEECD /* UITableView+XX.m */,
 				6BDCB7FE1D9A41FE00FBEECD /* UIView+XX.h */,
 				6BDCB7FF1D9A41FE00FBEECD /* UIView+XX.m */,
+				6B7A5D5E1DAE19B900B3A771 /* UIColor+XX.h */,
+				6B7A5D5F1DAE19B900B3A771 /* UIColor+XX.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -240,9 +245,11 @@
 				TargetAttributes = {
 					6BDCB7BD1D9A40EB00FBEECD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2BEF83H46M;
 					};
 					6BDCB7D61D9A40EB00FBEECD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2BEF83H46M;
 						TestTargetID = 6BDCB7BD1D9A40EB00FBEECD;
 					};
 				};
@@ -306,6 +313,7 @@
 				6BDCB7C31D9A40EB00FBEECD /* main.m in Sources */,
 				6BDCB80A1D9A41FE00FBEECD /* UIView+XX.m in Sources */,
 				6BDCB8081D9A41FE00FBEECD /* UINavigationController+XX.m in Sources */,
+				6B7A5D601DAE19B900B3A771 /* UIColor+XX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BEF83H46M;
 				INFOPLIST_FILE = XXTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingshihaoke.XXTools;
@@ -444,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2BEF83H46M;
 				INFOPLIST_FILE = XXTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingshihaoke.XXTools;
@@ -455,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2BEF83H46M;
 				INFOPLIST_FILE = XXToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingshihaoke.XXToolsTests;
@@ -467,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2BEF83H46M;
 				INFOPLIST_FILE = XXToolsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingshihaoke.XXToolsTests;
@@ -494,6 +506,7 @@
 				6BDCB7E21D9A40EB00FBEECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6BDCB7E31D9A40EB00FBEECD /* Build configuration list for PBXNativeTarget "XXToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +515,7 @@
 				6BDCB7E51D9A40EB00FBEECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

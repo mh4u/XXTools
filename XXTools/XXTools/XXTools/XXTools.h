@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 @interface XXTools : NSObject
 
-#pragma mark - 系统权限
 //相机权限
 + (void)authorization4album:(void (^)(NSString *msg, BOOL authorized))handle;
 
@@ -37,4 +36,14 @@
 //主线程
 + (void)doTaskInMainQueueSync:(dispatch_block_t)block;
 + (void)doTaskInMainQueueAsync:(dispatch_block_t)block;
+
+#pragma mark - frame
+//文字内容根据宽度自适应高度
++ (CGFloat)heightAdjustWidth:(CGFloat)width font:(UIFont *)font forString:(NSString *)string;
+
+//单行文字内容宽度
++ (CGFloat)widthAdjustString:(NSString *)string font:(UIFont *)font;
+
 @end
+
+

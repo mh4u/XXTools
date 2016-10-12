@@ -10,8 +10,6 @@
 
 @interface NSString (XX)
 
-
-
 #pragma mark - 加解密
 /**
 MD5加密
@@ -43,6 +41,16 @@ MD5加密
  URL decode
  */
 - (NSString *)xx_urlDecodedStr;
+
+#pragma mark - 
+
+//字节长度
+- (NSInteger)byteLength;
+
+#pragma mark - match
+//匹配是否有效手机号
+- (BOOL)matchPhone;
+
 
 
 @end

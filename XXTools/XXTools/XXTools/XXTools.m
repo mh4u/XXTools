@@ -90,4 +90,17 @@
 + (NSString *)bundleVersion {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
 }
+
++ (CGFloat)heightAdjustWidth:(CGFloat)width font:(UIFont *)font forString:(NSString *)string {
+    CGSize size = CGSizeMake(width, MAXFLOAT);
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName,nil];
+    NSStringDrawingOptions options = (NSStringDrawingOptions)(NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading);
+    CGSize actualsize =[string boundingRectWithSize:size options:options attributes:dic context:nil].size;
+    return ceilf(actualsize.height);
+}
+
++ (CGFloat)widthAdjustString:(NSString *)string font:(UIFont *)font {
+    CGSize strSize = [string sizeWithAttributes:@{NSFontAttributeName:font}];
+    return strSize.width;
+}
 @end

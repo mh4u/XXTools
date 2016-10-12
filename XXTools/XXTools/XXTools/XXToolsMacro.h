@@ -20,4 +20,14 @@
 
 #define DeviceId [UIDevice currentDevice].identifierForVendor.UUIDString
 
+#pragma mark - Log
+
+#ifdef DEBUG
+#   define XXLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define XXLog(...)
+#endif
+
+
+
 #endif /* XXToolsMacro_h */
