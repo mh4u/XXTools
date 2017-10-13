@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1355C57E1F90AE9F00F65544 /* XXDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355C57D1F90AE9F00F65544 /* XXDeallocBlockExecutor.m */; };
+		1355C5811F90AEE500F65544 /* NSObject+XXDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355C5801F90AEE500F65544 /* NSObject+XXDeallocBlock.m */; };
 		6B220BDD1DAF7A68008A7981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B220BDC1DAF7A68008A7981 /* main.m */; };
 		6B220BE01DAF7A68008A7981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B220BDF1DAF7A68008A7981 /* AppDelegate.m */; };
 		6B220BE31DAF7A68008A7981 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B220BE21DAF7A68008A7981 /* ViewController.m */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1355C57C1F90AE9F00F65544 /* XXDeallocBlockExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXDeallocBlockExecutor.h; sourceTree = "<group>"; };
+		1355C57D1F90AE9F00F65544 /* XXDeallocBlockExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXDeallocBlockExecutor.m; sourceTree = "<group>"; };
+		1355C57F1F90AEE500F65544 /* NSObject+XXDeallocBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XXDeallocBlock.h"; sourceTree = "<group>"; };
+		1355C5801F90AEE500F65544 /* NSObject+XXDeallocBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XXDeallocBlock.m"; sourceTree = "<group>"; };
 		6B220BD81DAF7A68008A7981 /* XXToolsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXToolsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B220BDC1DAF7A68008A7981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B220BDE1DAF7A68008A7981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +107,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1355C57B1F90AE8600F65544 /* DeallocBlockExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				1355C57C1F90AE9F00F65544 /* XXDeallocBlockExecutor.h */,
+				1355C57D1F90AE9F00F65544 /* XXDeallocBlockExecutor.m */,
+				1355C57F1F90AEE500F65544 /* NSObject+XXDeallocBlock.h */,
+				1355C5801F90AEE500F65544 /* NSObject+XXDeallocBlock.m */,
+			);
+			path = DeallocBlockExecutor;
+			sourceTree = "<group>";
+		};
 		6B220BCF1DAF7A68008A7981 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +173,7 @@
 		6B220C2B1DAF7B0E008A7981 /* XXTools */ = {
 			isa = PBXGroup;
 			children = (
+				1355C57B1F90AE8600F65544 /* DeallocBlockExecutor */,
 				6B220C2C1DAF7B0E008A7981 /* Category */,
 				6B220C451DAF7B0E008A7981 /* XXTools.h */,
 				6B220C461DAF7B0E008A7981 /* XXTools.m */,
@@ -245,7 +263,7 @@
 				TargetAttributes = {
 					6B220BD71DAF7A68008A7981 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2BEF83H46M;
+						DevelopmentTeam = 4Q4R3U8W8X;
 						ProvisioningStyle = Automatic;
 					};
 					6B220BF01DAF7A68008A7981 = {
@@ -300,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1355C5811F90AEE500F65544 /* NSObject+XXDeallocBlock.m in Sources */,
 				6B220C521DAF7B0E008A7981 /* UINavigationController+XX.m in Sources */,
 				6B220C541DAF7B0E008A7981 /* UIView+XX.m in Sources */,
 				6B220C531DAF7B0E008A7981 /* UITableView+XX.m in Sources */,
@@ -310,6 +329,7 @@
 				6B220C4C1DAF7B0E008A7981 /* NSString+XX.m in Sources */,
 				6B220C511DAF7B0E008A7981 /* UILabel+XX.m in Sources */,
 				6B220C4F1DAF7B0E008A7981 /* UIImage+XX.m in Sources */,
+				1355C57E1F90AE9F00F65544 /* XXDeallocBlockExecutor.m in Sources */,
 				6B220BE31DAF7A68008A7981 /* ViewController.m in Sources */,
 				6B220BE01DAF7A68008A7981 /* AppDelegate.m in Sources */,
 				6B220C4B1DAF7B0E008A7981 /* NSMutableArray+XX.m in Sources */,
@@ -449,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BEF83H46M;
+				DEVELOPMENT_TEAM = 4Q4R3U8W8X;
 				INFOPLIST_FILE = XXToolsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingshihaoke.XXToolsExample;
@@ -461,7 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BEF83H46M;
+				DEVELOPMENT_TEAM = 4Q4R3U8W8X;
 				INFOPLIST_FILE = XXToolsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mingshihaoke.XXToolsExample;
